@@ -29,8 +29,16 @@ app.controller('aboutController', function($scope){
 
 app.controller('folioController', function($scope){
     $scope.folio = [
-      {logo:"fa-university", title:"Graduate Computer Scienest", desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundementals of Computer Networking, Programming, Computer Arcitecure"},
-      {logo:"fa-product-hunt", title:"Junior Product Manager", desc:"Completed a Product Manager Course with General Assembly. Love Tickering and think of ways to imporve products"},
-      {logo:"fa-code", title:"Junior Software Engineer", desc:"Polyglot programmer Expreince in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."}
+      {modid:"1", logo:"img/portfolio/roundicons.png", title:"Graduate Computer Scienest", desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundementals of Computer Networking, Programming, Computer Arcitecure"},
+      {modid:"2", logo:"img/portfolio/startup-framework-preview.png", title:"Junior Product Manager", desc:"Completed a Product Manager Course with General Assembly. Love Tickering and think of ways to imporve products"},
+      {modid:"3", logo:"img/portfolio/startup-framework.png", title:"Junior Software Engineer", desc:"Polyglot programmer Expreince in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."}
+    ]
+});
+
+app.controller('timelineController', function($scope){
+    $scope.timeline = [
+      {modid:"4", logo:"fa-university", title:"Graduate Computer Scienest", desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundementals of Computer Networking, Programming, Computer Arcitecure"},
+      {modid:"5", logo:"fa-product-hunt", title:"Junior Product Manager", desc:"Completed a Product Manager Course with General Assembly. Love Tickering and think of ways to imporve products"},
+      {modid:"6", logo:"fa-code", title:"Junior Software Engineer", desc:"Polyglot programmer Expreince in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."}
     ]
 });
