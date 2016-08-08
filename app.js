@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 //connect to mongodb
-mongoose.connect("mongodb://localhost:27017/alectronic-cv");
-//mongoose.connect("mongodb://heroku_s2gdc6gq:heroku_s2gdc6gq@ds029565.mlab.com:29565/heroku_s2gdc6gq");
+//mongoose.connect("mongodb://localhost:27017/alectronic-cv");
+mongoose.connect("mongodb://heroku_s2gdc6gq:heroku_s2gdc6gq@ds029565.mlab.com:29565/heroku_s2gdc6gq");
 //init models
 require('./models/models.js');
 
