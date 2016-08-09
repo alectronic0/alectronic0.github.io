@@ -2,6 +2,7 @@ var app = angular.module('myApp',['ngRoute', 'ngResource']).run(function($rootSc
   $rootScope.user = {
     fName:"Alec",
     lName:"Doran-Twyford",
+    profilepic:"img/team/now_cas.png",
       fb:{icon:"fa-facebook",iconsq:"fa-facebook-square",url:"https://fb.com/alectronicX"},
       fbPage:{icon:"fa-facebook",iconsq:"fa-facebook-square",url:"https://fb.com/alectronic0"},
       twitter:{icon:"fa-twitter",iconsq:"fa-twitter-square",url:"https://twitter.com/alectronic0"},
@@ -15,7 +16,7 @@ var app = angular.module('myApp',['ngRoute', 'ngResource']).run(function($rootSc
       youtubeVlog:{icon:"fa-youtube",iconsq:"fa-youtube-square",url:"https://www.youtube.com/user/alecdorantwyfordvlog"},
       youtubePro:{icon:"fa-youtube",iconsq:"fa-youtube-square",url:"https://www.youtube.com/user/alectronic0"},
       foursquare:{icon:"fa-foursquare",iconsq:"",url:"https://foursquare.com/alectronic0"},
-      skype:{icon:"fa-skype",iconsq:"",url:"AlecDoranTwyford"},
+      //skype:{icon:"fa-skype",iconsq:"",url:"skype:AlecDoranTwyford?chat"},
       steam:{icon:"fa-steam",iconsq:"fa-steam-square",url:"http://steamcommunity.com/id/Alectronic0/"},
       stackoverflow:{icon:"fa-stack-overflow",iconsq:"" ,url:"http://stackoverflow.com/users/2893200/alec-george-doran-twyford"},
       stackexchange:{icon:"fa-stack-exchange",iconsq:"" ,url:"http://stackexchange.com/users/3438883/alec-george-doran-twyford"}
