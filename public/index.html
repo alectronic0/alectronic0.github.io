@@ -22,7 +22,7 @@
 
 <body id="page-top" class="index" ng-app="myApp">
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <a class="navbar-brand page-scroll" href="#page-top">Alectronic</a>
 
@@ -45,17 +45,18 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
+      </nav>
         <!-- /.container-fluid -->
-    </nav>
+
 
     <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Hi I'M Alec!</div>
-                <div class="intro-lead-in">It's Nice To Meet You</div>
-                <div class="intro-heading">///////Site Under\\\\\\\<br>\\\\\\\Construction///////</div>
-                <a href="#services" class="page-scroll btn btn-xl">Who are you?</a>
+                <div class="intro-heading"> > Site Under Construction < </div>
+                <div class=""</div>
+                <a target="_blank "href="extra/alec_cv.pdf"  class="btn btn-xl alec-btn">Here My CV</a></br>
+                <a href="#about" class="page-scroll btn btn-xl alec-btn">Who are you?</a>
             </div>
         </div>
     </header>
@@ -103,7 +104,7 @@
 <!-- ======================================================================================================================== -->
 
     <!-- Portfolio Grid Section========================================================================================== -->
-    <section id="portfolio" class="bg-light-gray" ng-controller="folioController">
+    <section id="exp" class="bg-light-gray portfolio" ng-controller="folioController">
 
 
             <div class="row no-gutter">
@@ -163,29 +164,12 @@
                 <div class="col-lg-12">
                     <ul class="timeline">
                       <li><div class="timeline-image"><h4>The</br>Beginning!</h4></div></li>
-
-
-
                         <li ng-repeat="t in timeline">
-
-                          <div class="timeline-panel timeline-body-left">
-                              <div class="timeline-heading"><h4 class="heading">LEFT {{t.title}}</h4><h4 class="subheading">{{t.subtitle}}</h4></div>
-                              <div class="timeline-body "><p class="text-muted">{{t.desc}}</p></div>
-                              <div class="timeline-body"><p class="text-muted">{{t.desc}}</p></div>
-                          </div>
-
-
                             <div class="timeline-image"><a href="#portfolioModal{{t.id}}" class="portfolio-link" data-toggle="modal"><img class="img-circle img-responsive" src="{{t.img}}" alt=""></a></div>
-
-
-
-                            <div class="timeline-panel timeline-body-right">
+                            <div class="timeline-panel">
                                 <div class="timeline-heading"><h4 class="heading">RIGHT {{t.title}}</h4><h4 class="subheading">{{t.subtitle}}</h4></div>
                                 <div class="timeline-body "><p class="text-muted">{{t.desc}}</p></div>
-                                <div class="timeline-body"><p class="text-muted">{{t.desc}}</p></div>
                             </div>
-
-
                         </li>
 
                         <li><div class="timeline-image"><h4>To be</br>Continued!</h4></div></li>

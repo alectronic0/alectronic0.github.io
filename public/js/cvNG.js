@@ -59,6 +59,7 @@ app.controller('aboutController', function($scope){
 
 
 app.controller('folioController', function($scope){
+
     $scope.folio = [
       {
         id:"2",
@@ -85,6 +86,7 @@ app.controller('folioController', function($scope){
         desc:"Polyglot programmer Expreince in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
       }
     ]
+
 });
 
 app.controller('timelineController', function($scope){
