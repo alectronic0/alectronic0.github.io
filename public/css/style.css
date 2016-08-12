@@ -8,6 +8,11 @@
     margin: 1px;
   }
 
+.img-mid-thumb{
+    width: 250px;
+    height: auto;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -289,6 +294,10 @@ header .intro-text .intro-heading {
 }
 section {
   padding: 100px 0;
+  border: 1px;
+  border-width: thin;
+  border-color: #eee;
+  border-style: solid;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -305,7 +314,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 75px 0;
   }
 }
 .service-heading {
