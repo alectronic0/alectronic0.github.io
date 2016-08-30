@@ -1,0 +1,55 @@
+<!-- About Section -->
+<section id="hist"  ng-controller="timelineController">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">History</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                  <li><div class="timeline-image"><h4>The</br>Beginning!</h4></div></li>
+                    <li ng-repeat="t in timeline" ng-class-odd="'timeline-image'" ng-class-even="'timeline-inverted'">
+                        <div class="timeline-image"><a href="#portfolioModal{{t.id}}" class="portfolio-link" data-toggle="modal"><img class="img-circle img-responsive" src="{{t.img}}" alt=""></a></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading"><h4 class="heading">{{t.title}}</h4><h4 class="subheading">{{t.subtitle}}</h4></div>
+                            <div class="timeline-body "><p class="text-muted">{{t.desc}}</p></div>
+                        </div>
+                    </li>
+
+                    <li><div class="timeline-image"><h4>To be</br>Continued!</h4></div></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div ng-controller="timelineController">
+  <div ng-repeat="t in timeline" class="portfolio-modal modal fade" id="portfolioModal{{t.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>{{t.title}}</h2>
+                                <p class="item-intro text-muted">{{t.subtitle}}</p>
+                                <img class="img-responsive img-centered img-mid-thumb" src="{{t.img}}" alt="">
+                                <p class="item-intro text-muted">{{t.desc}}</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

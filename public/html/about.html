@@ -1,0 +1,40 @@
+<!-- Services Section ============================================================================================================-->
+<section id="about" ng-controller="aboutController">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Who is Alec?</h2>
+                <h3 class="section-subheading text-muted">I am normal person try to surive this MMORPG Called Life.</h3>
+
+                <div class="team-member">
+                    <h4>{{user.fName}}</h4>
+                    <p class="text-muted">Junior Product Manager / Software Engineer</p>
+                    <img src="{{user.profilepic}}" class="img-responsive img-circle" alt="">
+                    <ul class="list-inline social-buttons">
+                      <li><a href="{{user.fb.url}}" target="_blank"><i class="fa {{user.fb.icon}}"></i></a></li>
+                      <li><a href="{{user.instagram.url}}" target="_blank"><i class="fa {{user.instagram.icon}}"></i></a></li>
+                      <li><a href="{{user.linkedin.url}}" target="_blank"><i class="fa {{user.linkedin.icon}}"></i></a></li>
+                      <li><a href="{{user.twitter.url}}" target="_blank"><i class="fa {{user.twitter.icon}}"></i></a></li>
+                      <li><a href="{{user.github.url}}" target="_blank"><i class="fa {{user.github.icon}}"></i></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row text-center">
+<!-- LOOP IT WITH ANGULAR -->
+            <div class="col-md-4" ng-repeat="a in about" ng-class-odd="'odd'" ng-class-even="'even'">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa {{a.ico}} fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">{{a.title}}</h4>
+                <p class="text-muted">{{a.desc}}
+                </p>
+            </div>
+<!-- =============================================== -->
+        </div>
+    </div>
+</section>
