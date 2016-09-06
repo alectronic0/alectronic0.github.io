@@ -1,0 +1,36 @@
+<section id="refrence" class="bg-light-gray" ng-controller="refController">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Refrence</h2>
+                <h3 class="section-subheading text-muted">My Previous Bosses Can't Be Wrong</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-4" ng-repeat="ref in refrence">
+                <div class="team-member">
+                    <img src="{{ref.img}}" class="img-responsive img-circle" alt="">
+                    <h4>{{ref.title}}</h4>
+                    <p class="text-muted">{{ref.subtitle}}</p>
+                    <p >{{ref.desc}}</p>
+                    <ul class="list-inline social-buttons">
+                        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                        <li><a href="{{ref.linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a title="{{ref.mobile}}" href="tel:{{ref.mobile}}"><i class="fa fa-phone"></i></a></li>
+                        <li><a title="{{ref.email}}" href="mailto:{{ref.email}}"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="skype:AlecDoranTwyford">Link will initiate Skype to call my Skype username!</a>
+  <a href="skype:myszka">Link will initiate Skype to call my Skype username!</a>
+            myszka
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            </div>
+        </div>
+    </div>
+</section>

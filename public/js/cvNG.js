@@ -149,3 +149,59 @@ app.controller('teamController', function($scope){
       }
     ]
 });
+
+
+
+
+app.controller('refController', function($scope){
+    $scope.refrence =  [
+      {
+        id:"7",
+        ico:"",
+        img:"img/refrence/kdot.jpg",
+        url:"",
+        title:"Kimeshan",
+        subtitle:"Lead Developer @ GLEAT",
+        desc:"Great guy",
+        mobile:"+447554742854",
+        email:"kimeshan@gmail.com",
+        linkedin:"https://www.linkedin.com/in/kimeshan"
+      },
+      {
+        id:"7",
+        ico:"",
+        img:"img/refrence/ian.jpg",
+        url:"",
+        title:"Kimeshan",
+        subtitle:"MD @ IVSTEL",
+        desc:"Great guy",
+        mobile:"+612 9288 8888",
+        email:"Ian@ivstel.com",
+        linkedin:"https://www.linkedin.com/in/ian-barnes-4753871"
+      },
+      {
+        id:"7",
+        ico:"",
+        img:"img/refrence/chris.jpg",
+        url:"",
+        title:"Chris Climo",
+        subtitle:"Line Manager @ Sky",
+        desc:"Great guy",
+        mobile:"+447546366878",
+        email:"Christopher.Climo@sky.uk",
+        linkedin:"https://www.linkedin.com/in/chris-climo-869b7741"
+      },
+      {
+        id:"7",
+        ico:"",
+        img:"img/refrence/blank.png",
+        url:"",
+        title:"Jamie H",
+        subtitle:"Manager @ Waitrose",
+        desc:"Great guy",
+        mobile:"",
+        email:"",
+        linkedin:"https://www.linkedin.com/in/jamie-hewitt-47a7a675"
+      },
+    ]
+});
