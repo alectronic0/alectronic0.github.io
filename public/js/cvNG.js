@@ -37,16 +37,16 @@ app.controller('aboutController', function($scope){
         url:"",
         title:"Junior Product Manager",
         subtitle:"",
-        desc:"Completed a Product Manager Course with General Assembly. Love Tickering and think of ways to imporve products"
+        desc:"Completed a Product Manager Course with General Assembly. Love Tinkering and think of ways to improve products"
       },
       {
         id:"1",
         ico:"fa-graduation-cap",
         img:"",
         url:"",
-        title:"Graduate Computer Scienest",
+        title:"Graduate Computer Scientist",
         subtitle:"",
-        desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundementals of Computer Networking, Programming, Computer Arcitecure"
+        desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundamentals of Computer Networking, Programming, Computer Architecture"
       },
       {
         id:"3",
@@ -55,7 +55,7 @@ app.controller('aboutController', function($scope){
         url:"",
         title:"Junior Software Engineer",
         subtitle:"",
-        desc:"Polyglot programmer Expreince in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
+        desc:"Polyglot programmer Experience in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
       }
     ]
 });
@@ -71,16 +71,16 @@ app.controller('folioController', function($scope){
         url:"aaaa",
         title:"Junior Product Manager",
         subtitle:"",
-        desc:"Completed a Product Manager Course with General Assembly. Love Tickering and think of ways to imporve products"
+        desc:"Completed a Product Manager Course with General Assembly. Love Tinkering and think of ways to improve products"
       },
       {
         id:"1",
         ico:"",
         img:"img/folio/computer_science.png",
         url:"",
-        title:"Graduate Computer Scienest",
+        title:"Graduate Computer Scientist",
         subtitle:"",
-        desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundementals of Computer Networking, Programming, Computer Arcitecure"
+        desc:"Completed BSc (Hons) Computer Science with a First. With a background of the Core fundamentals of Computer Networking, Programming, Computer Architecture"
       },
       {
         id:"3",
@@ -89,7 +89,7 @@ app.controller('folioController', function($scope){
         url:"",
         title:"Junior Software Engineer",
         subtitle:"",
-        desc:"Polyglot programmer Expreince in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
+        desc:"Polyglot programmer Experience in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
       }
     ]
 
@@ -158,7 +158,8 @@ app.controller('refController', function($scope){
       {
         id:"7",
         ico:"",
-        img:"img/refrence/kdot.jpg",
+//        img:"img/refrence/kdot.jpg",
+        img:"img/refrence/blank.png",
         url:"",
         title:"Kimeshan",
         subtitle:"Lead Developer @ GLEAT",
@@ -170,7 +171,8 @@ app.controller('refController', function($scope){
       {
         id:"7",
         ico:"",
-        img:"img/refrence/ian.jpg",
+//        img:"img/refrence/ian.jpg",
+        img:"img/refrence/blank.png",
         url:"",
         title:"Kimeshan",
         subtitle:"MD @ IVSTEL",
@@ -182,7 +184,8 @@ app.controller('refController', function($scope){
       {
         id:"7",
         ico:"",
-        img:"img/refrence/chris.jpg",
+//        img:"img/refrence/chris.jpg",
+        img:"img/refrence/blank.png",
         url:"",
         title:"Chris Climo",
         subtitle:"Line Manager @ Sky",
