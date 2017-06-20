@@ -53,9 +53,9 @@ app.controller('aboutController', function($scope){
         ico:"fa-code",
         img:"",
         url:"",
-        title:"Junior Software Engineer",
+        title:"Software Engineer",
         subtitle:"",
-        desc:"Polyglot programmer Experience in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA), MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
+        desc:"Polyglot programmer Experience in Java, JavaScript(Angular.js, Node.Js), Visual Basic(VBA),Python, MySQL, MongoDB. Who Can quickly learn and adapt to new language with a few days."
       }
     ]
 });
@@ -94,6 +94,41 @@ app.controller('folioController', function($scope){
     ]
 
 });
+
+app.controller('jobController', function($scope){
+
+    $scope.jobbo = [
+      {
+        id:"1",
+        ico:"",
+        img:"extra/work/10Solirius/logo.png",
+        url:"",
+        title:"Solirius",
+        subtitle:"Software Engineer",
+        desc:""
+      },
+      {
+        id:"2",
+        ico:"",
+        img:"extra/work/9sky/logo.png",
+        url:"",
+        title:"Sky",
+        subtitle:"VB Engineer",
+        desc:""
+      },
+      {
+        id:"3",
+        ico:"",
+        img:"extra/work/8gleat/logo.png",
+        url:"",
+        title:"Junior Software Engineer",
+        subtitle:"Mobile Product Developer",
+        desc:""
+      }
+    ]
+
+});
+
 
 app.controller('timelineController', function($scope){
     $scope.timeline = [

@@ -4,13 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
-var mongoose = require('mongoose');
-//connect to mongodb
-//mongoose.connect("mongodb://localhost:27017/alectronic-cv");
-mongoose.connect("mongodb://heroku_s2gdc6gq:heroku_s2gdc6gq@ds029565.mlab.com:29565/heroku_s2gdc6gq");
-//init models
-require('./models/models.js');
+//var mongoose = require('mongoose');
+////connect to mongodb
+//mongoose.connect("mongodb://heroku_s2gdc6gq:heroku_s2gdc6gq@ds029565.mlab.com:29565/heroku_s2gdc6gq");
+////init models
+//require('./models/models.js');
 
 
 var app = express();
@@ -26,8 +24,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var api = require('./routes/api');
-app.use('/api', api);
+//var api = require('./routes/api');
+//app.use('/api', api);
+
+var user = require('./routes/users');
+app.use('/xxx', user);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
