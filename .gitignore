@@ -35,7 +35,6 @@ testem.log
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-.idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
 
@@ -174,7 +173,6 @@ node_modules/
 jspm_packages/
 
 # Typescript v1 declaration files
-typings/
 
 # Optional npm cache directory
 .npm
@@ -186,7 +184,6 @@ typings/
 .node_repl_history
 
 # Output of 'npm pack'
-*.tgz
 
 # Yarn Integrity file
 .yarn-integrity
