@@ -1,0 +1,9 @@
+logging:
+  microservice: alectronic-cv
+  team: alectronic
+  environment: local
+#healthcheck:
+#  environment: PACKAGES_ENVIRONMENT
+#  project: PACKAGES_PROJECT
+#  name: PACKAGES_NAME
+#  version: PACKAGES_VERSION

@@ -1,0 +1,32 @@
+---
+version: '2.1'
+
+services:
+  alectronic-chripper:
+    build:
+      context: .
+    environment:
+      - NODE_ENV=development
+      - PORT=8080
+      - MONGODB_HOST=
+#      logging env vars
+      - ROOT_APPENDER=JSON_CONSOLE
+      - LOG_OUTPUT=single
+      - JSON_CONSOLE_PRETTY_PRINT=false
+      - REFORM_SERVICE_TYPE=node
+      - REFORM_SERVICE_NAME=alectronic-chripper
+      - REFORM_TEAM=alectronic
+      - REFORM_ENVIRONMENT=docker
+#      healthcheck env vars
+      - PACKAGES_ENVIRONMENT=docker
+      - PACKAGES_PROJECT=alectronic
+      - PACKAGES_NAME=alectronic-chripper
+      - PACKAGES_VERSION=unknown
+#    links:
+#     - mongodb
+#    depends_on:
+#     - mongodb
+    ports:
+      - 8080:8080
+
+

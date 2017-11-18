@@ -1,33 +1,39 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
-var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const {logging, logger} = require("./app/logging/logger");
+var config = require('config');
 
-var mongoose = require('mongoose');
-//connect to mongodb
-//mongoose.connect("mongodb://localhost:27017/alectronic-cv");
-mongoose.connect("mongodb://heroku_s2gdc6gq:heroku_s2gdc6gq@ds029565.mlab.com:29565/heroku_s2gdc6gq");
-//init models
-require('./models/models.js');
+//var mongoose = require('mongoose');
+////connect to mongodb
+//mongoose.connect("mongodb://heroku_s2gdc6gq:heroku_s2gdc6gq@ds029565.mlab.com:29565/heroku_s2gdc6gq");
+////init models
+//require('./models/models.js');
 
 
 var app = express();
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'app','views'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
+app.use(favicon(path.join(__dirname, 'app','public', 'favicon.ico')));
+app.use(logging.express.accessLogger());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app','public')));
 
-var api = require('./routes/api');
-app.use('/api', api);
+//var api = require('./routes/api');
+//app.use('/api', api);
+var index = require('./app/routes/index');
+app.use('/', index);
+
+var user = require('./app/routes/users');
+app.use('/xxx', user);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
