@@ -3,8 +3,8 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-const {logging, logger} = require("./app/logging/logger");
 var config = require('config');
+const {logging, logger} = require("./app/logging/logger");
 
 //var mongoose = require('mongoose');
 ////connect to mongodb
