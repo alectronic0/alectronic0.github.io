@@ -1,0 +1,19 @@
+{
+  "name": "Alectronic-cv",
+  "description": "My CV Web App",
+  "keywords": [
+    "chirper",
+    "node"
+  ],
+  "website": "http://alectronic-cv.herokuapp.com/",
+  "repository": "https://github.com/alectronic0/alectronic-cv",
+  "logo": "",
+  "success_url": "/",
+  "scripts": {},
+  "env": {},
+  "formation": {},
+  "image": "heroku/node",
+  "addons": [],
+  "buildpacks": [],
+  "environments": {}
+}
