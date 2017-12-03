@@ -4,6 +4,7 @@
 [![dependencies Status](https://david-dm.org/alectronic0/alectronic-cv/status.svg)](https://david-dm.org/alectronic0/alectronic-cv)
 [![devDependencies Status](https://david-dm.org/alectronic0/alectronic-cv/dev-status.svg)](https://david-dm.org/alectronic0/alectronic-cv?type=dev)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/alectronic0/alectronic-cv)
 ## intro
 
 My CV can be found here alectronic-cv.herokuapp.com
