@@ -1,6 +1,7 @@
 # alectronic-cv
 [![Build Status](https://travis-ci.org/alectronic0/alectronic-cv.svg?branch=master)](https://travis-ci.org/alectronic0/alectronic-cv)
 [![codecov](https://codecov.io/gh/alectronic0/alectronic-cv/branch/master/graph/badge.svg)](https://codecov.io/gh/alectronic0/alectronic-cv)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cdea5391c48b4a40b3814c81fe7d0960)](https://www.codacy.com/app/alectronic0/alectronic-cv)
 [![dependencies Status](https://david-dm.org/alectronic0/alectronic-cv/status.svg)](https://david-dm.org/alectronic0/alectronic-cv)
 [![devDependencies Status](https://david-dm.org/alectronic0/alectronic-cv/dev-status.svg)](https://david-dm.org/alectronic0/alectronic-cv?type=dev)
 
