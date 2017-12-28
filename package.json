@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "NODE_PATH=. npm run setup",
     "setup": "echo 'no setup atm'",
-    "start": "NODE_PATH=. ./bin/www",
+    "start": "NODE_PATH=. ./server.js",
     "test": "echo 'no test atm'",
     "test:nsp": "nsp check",
     "test:nsp-warn": "nsp check --output summary --warn-only"
