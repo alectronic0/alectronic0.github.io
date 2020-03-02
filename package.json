@@ -11,7 +11,7 @@
     "test:nsp-warn": "nsp check --output summary --warn-only"
   },
   "dependencies": {
-    "@hmcts/nodejs-healthcheck": "^1.4.3",
+    "@hmcts/nodejs-healthcheck": "^1.6.0",
     "@hmcts/nodejs-logging": "^1.4.2",
     "body-parser": "^1.18.2",
     "config": "^1.28.1",
